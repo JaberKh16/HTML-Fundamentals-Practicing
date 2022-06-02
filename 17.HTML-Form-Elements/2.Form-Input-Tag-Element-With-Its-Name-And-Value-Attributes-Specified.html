@@ -1,0 +1,51 @@
+<!--Form Input Element Tag Attributes
+    ==================================
+    Input Element Tag <input> has some following attributes which are the following:
+    
+    1) type="text/password/file/radio/checkbox/button/hidden/reset/submit/time/color/datetime
+        /month/week/range/url/..."  ; used to define the type of input element.
+    2) name="text_value"    ; used to set a name for the input tag, here 'name' is basically
+                            a container/variable which later used to store value for this input field.
+    3) id="text_value"      ; used to set an identification for the input element tag.
+    4) value="text_value"   ; used to set a value for the input field where this provided value
+                            are basically stored by attribute 'name' thus by notation is something like this
+                            (name=value) where 'name' is container/variable for the attribute 'value' to store
+                            its value inside it.
+    5) checked              ; used to make an input field checked already while page loads mostly used with 
+                            'checkbox' or 'radiobutton' type input data.
+    6) required             ; used to set an input field acts as compulsary as taking input.
+    7) disabled             ; used to set an input field disabled so it can't be editable by the user's.
+    8) readonly             ; used to set an input field as readonly so it can't be editable just can be read
+                            like other tags such paragraphs(<p>) etc.
+    9) pattern="regex-fmt"  ; used to provide regex based pattern while filling the input field by user's.
+    10) autofocus           ; used to autofocus any input field while page loads. Remember at a time 'autofocus'
+                            can be applied on single input field.
+    11) alt="text_value"    ; used to define an input field if something is messy with it.
+    12) src="url"           ; used to set an image on submit type input via providing image 'url'.
+    13) title="text_value"  ; used to provide a tooltip for the input field to denote what is about this input field 
+                            or what kind of data this field is asking basically.
+    14) size="numeric_value"; used to set an character size limit this particular input field can take atmost.
+    15) maxlength="numeric_value"   ; used to set a maximum length of characters this input field can take atmost.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Input Tag Attributes</title>
+    </head>
+    <body>
+        <form>
+            First name :
+            <!--Putting values while setting attributes name='first-name' and
+            value='Jaber' HTML DOM basically sees it like -  first-name= 'Jaber'
+            because 'name' is variable for html element which can store some value 
+            provided by that element. Now though the value is provided to the input
+            element so values will be shown in the input field. -->
+            <input type="text" name="first-name" value="Jaber">
+            <br>Last name :
+            <input type="text" name="last-name" value="Khan">
+            <br>
+            <br>
+            <input type="submit" value="Click me">            
+        </form>
+    </body>
+</html>

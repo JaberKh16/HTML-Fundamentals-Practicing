@@ -1,0 +1,91 @@
+<!--Form Element With Internal Styling-->
+
+<!DOCTYPE html>
+<html lang="en-US">    
+<head>
+    <meta charset="utf-8">
+    <title>Form Element With Internal Styling</title>
+    <style>
+        
+        div{
+            /* border: 2px solid lightslategrey; */
+            color:blue;
+            text-decoration:underline;
+        }
+
+        form{
+            /* to center the form on the page */
+            margin:0px auto;
+            width: 400px;
+            /* to see the outline of the form */
+            padding: 3em;
+            border: 2px solid #9DAB;
+        }
+        
+        form div + div{
+            margin-top: 1em ;
+        }
+        
+        label{
+            display: inline-block;
+            width: 90px ;
+        }
+        
+        input, textarea{
+            /* to make sure that all text fields have the same font settings By default, textareas have a monospace font*/
+            font: 1em sans-serif;
+            /* to give the same size to all text fields */
+            width: 300px ;
+            box-sizing: border-box;
+            /* to harmonize the look & feet of text field borders */
+            border: 1px solid #999;
+        }
+        
+        input:focus, textarea:focus{
+            /* to give a little highlight on active elements */
+            border-color: aqua;
+        }
+        
+        textarea{
+            /* to properly align multiline text fields with their label */
+            vertical-align: top;
+            /* to give enough romm to type some text */
+            height: 5em;
+        }
+        
+        button{
+            /* to position the buttons to the same position of the text fields */
+            padding-block: 9px;
+        }
+        
+        button{    
+            /* this extra margin represent roughly the same space as the space between 
+            the labels and their text fields */
+            margin-left: 15em;
+        }
+    </style>
+</head>
+    
+<body>
+    <p> <div style="color: brown; text-align:center"><h2>Information Form</h2></div>
+    <form action="" method="post">
+        <div style="color: darkblue">
+            <label for="name"> Name : </label>
+            <input type="text" id="name" name="user-name" value="Jaber">
+        </div>
+        
+        <div style="color: darkblue">
+            <label for="mail"> Email </label>
+            <input type="email" id="mail" name="user_mail" value="nahianrafi6@gmail.com">
+        </div>
+        
+        <div style="color: darkblue">
+            <label for="msg"> Message : </label>
+            <textarea id="msg" name="user_message">By default this element is filled with this text </textarea>    
+        </div>
+        <div class="button">
+            <button type="button" value="submit"> Send your message </button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!--Table Structure Defining With Table Tags:
+    =========================================
+    In Table, HTML Table has some tag which is used to define
+    table whole structure as a whole so that table now knows
+    which part of the table part is which. Those tags are the 
+    following: 
+
+    a) <thead> .... </thead> used to define Table Heading Tag
+    b) <tbody> .... </tbody> used to define Table Body Tag
+    c) <tfoot> .... </tfoot> used to define Table Foot Tag
+-->
+
+<!DOCTYPE html>
+<html>
+<head>    
+  <meta charset="utf-8">
+  <title> My Spending Record </title>  
+  <style>
+      
+      tbody {
+          font-size: 90% ;
+          font-style: italic ;
+      }
+      
+      tfoot {  
+          font-weight: bold ;
+      }
+  </style>    
+</head>
+
+<body>
+    <div style="color: darkgoldenrod"><h1> My Spending Record </h1> </div>
+    <table>
+        
+        <caption> <div style="color: blueviolet"> How I chose to spend my money </div> </caption>
+      
+      
+      <thead>
+          
+        <tr>
+          <th> Purchase </th>
+          <th> Location </th>
+          <th> Date </th>
+          <th> Evaluation </th>
+          <th> Cost (€) </th>
+        </tr>
+        
+      </thead>
+      
+      <!-- Including Table Heading Header using <tbody> ... </tbody> -->
+      <tbody>  
+        <tr>
+          <td> Haircut </td>
+          <td> Hairdresser </td>
+          <td> 12/09 </td>
+          <td> Great idea </td>
+          <td> 30 </td>
+        </tr>
+        
+        <tr>
+          <td>Lasagna</td>
+          <td>Restaurant</td>
+          <td>12/09</td>
+          <td>Regrets</td>
+          <td>18</td>
+        </tr>
+        
+        <tr>
+          <td> Shoes </td>
+          <td> Shoeshop </td>
+          <td> 13/09 </td>
+          <td> Big regrets </td>
+          <td> 65 </td>
+        </tr>
+        
+        <tr>
+          <td> Toothpaste </td>
+          <td> Supermarket </td>
+          <td> 13/09 </td>
+          <td> Good </td>
+          <td> 5 </td>
+        </tr>
+        
+      </tbody>
+      
+      <!-- Including Table Heading Header using <tfoot> ... </tfoot> -->
+      <tfoot>
+        <tr>
+          <td colspan="4"> SUM </td>
+          <td> 118 <td>
+        </tr>
+      </tfoot>
+          
+    </table>
+  </body>
+</html>

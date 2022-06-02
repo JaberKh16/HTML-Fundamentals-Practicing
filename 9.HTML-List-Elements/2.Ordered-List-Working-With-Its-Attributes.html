@@ -1,0 +1,58 @@
+<!--Ordered List With Its Attributes
+    ================================
+    Ordered List can generally created in the need of group of elements
+    in format of Number, Alphabets and Roman Numbers. Ordered List have 
+    basically two types of attributes which are the following:
+        a) type = "alphabets/number"
+            where, alphabets can be of two kind -- > 
+                    1) lowercase: 'a' 
+                    2) uppercase: 'A'
+
+            and number can of two kind -- > 
+                    1) Decimal Number: 1(by default) 
+                    2) Roman Number: 'i' for lowercase and 'I' for uppercase
+
+        b) start = "number"
+    
+        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List Working With Its Attributes</title>
+</head>
+<body>
+    <h2 style="color:blue">Coursera Online Course</h2>
+    <p><strong><u>Programming Courses</u></strong></p>
+    
+    <!-- Making an orderde list with its type as Alphabets(uppercase)-->
+    <ol type="A">
+        <li>C/C++ Courses</li>
+        <li>Python Courses</li>
+        <li>SQL Courses</li>
+        <li>JavaScript Courses</li>
+    </ol>
+
+
+    <p><strong><u>Multimedia Courses</u></strong></p>
+    <!-- Making an orderde list with its type as Alphabets(lowercase)-->    
+    <ol type="a">
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>
+            Adobe XD
+            <!-- Making an orderde list with its type as Roman(lowercase)-->
+            <ol type="i">
+                <li>Figma Design</li>
+                <li>UX Design</li>
+                <li>UI Design</li>
+            </ol>
+        </li>
+    </ol>
+
+</body>
+</html>

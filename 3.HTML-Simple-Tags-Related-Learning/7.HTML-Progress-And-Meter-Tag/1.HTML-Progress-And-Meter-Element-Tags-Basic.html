@@ -1,0 +1,43 @@
+<!--
+    HTML Progress Bar Element Tags:
+    ===============================
+    HTML Progress Bar Element Tags are two types which does the same work those tags
+    are the following:
+        a) <progress> .... </progress>  ; used to show the progress/status of a file.
+        b) <meter> .... </meter>        ; used to generate visual images of progress of a file.
+    
+        Both of the tags basical working purpose is to provide a status of an uploading or downloading
+        information for a file.
+    
+    Attributes of Those Tags:
+    -------------------------
+    a) Progress Tag:<progress> ... </progress> takes two attributes first 'value' to provide
+                    information current amount of progress info and 'max' to provide maximum value 
+                    this 'value' attribute can reach. Here, both 'value' and 'max' attribute can take 
+                    numeric type value.
+    
+    b) Meter Tag:<meter> ... </meter> takes different types of attributes those are 'value' to provide
+                current amount of status info, 'max' to provide maximum value 'value' attribute can reach, 'min'
+                to provide the minimum value this 'value' attribute can reach. Here, 'value', 'max', 'min' attribute 
+                can take numeric type value.
+    
+-->
+<!DOCTYPE html>
+<html>    
+<head>
+    <title> Progress Bar Element Tag </title>
+</head>
+<body>
+    <section>
+        <div style="color: coral"> <h3> progress bar </h3> </div>
+        <!--HTML Progress Element Tag with Attribute value='679' where max='1000'-->
+        <progress max="1000" value="679"> 679/1000 </progress>        
+    </section>
+    <section>
+        <div style="color: chartreuse"> <h3> meter bar </h3> </div>
+        <!--HTML Meter Element Tag with Attribute value='88' where max='100'-->
+        <meter max="100" value="88"> 80/100 </meter>
+        <meter min="20" max="100" value="75" > 75 </meter>            
+    </section>
+</body>
+</html>

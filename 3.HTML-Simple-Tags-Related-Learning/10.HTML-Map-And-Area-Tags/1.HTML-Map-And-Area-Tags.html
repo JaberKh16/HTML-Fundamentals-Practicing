@@ -1,0 +1,53 @@
+
+<!--
+    HTML Map and Area Element Tag: <map> .... </map> and <area>....</area>
+    ======================================================================
+    HTML <map>...</map> tag defines a client side image map. In the image map 
+    it provides a functionality of clickable point where with normal 
+    <img> tag it isn't possible. So, an image map is an image with a 
+    clickable area. 
+
+    <map> element tag contains a number of <area> elements tag that
+    defines the clickable area in the image area.
+
+    To make an image a clickable image map we need to use the <img>
+    tag attribute name - 'usemap', which is used to define that make this
+    image an clickable image. 'usemap' Attribute takes a string based value
+    with the identifer symbol before it to define the clickable map portion.
+    Example:
+        <img src='', usemap='#map-info'>
+        <map name='map-info'> </map>
+    In the above code, <img> tag attriute 'usemap' defines an identifer name
+    which is then used on the <map> tag with attribute 'name' to identify the
+    image as an map image.
+
+    <area>...</area> tag defines the area in the image map. It takes some
+    attribute such as 'shape' which defines how region shape will be considered
+    and 'coords' value to define what coordinates value should take for the 
+    specified 'shape' attribute. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> HTML Map Element Tag</title>    
+</head>
+<body>
+    <!--Attribute-> usemap='bangladesh-map' is used make the image an clickable image-->
+    <img src="./images/Bangladesh-map-divisions-wise.jpg" alt="Bangladesh Map" width="700" height="600" title="Bangladesh Map" usemap="#bangladesh-map">
+    <!-- Map Tag -->
+    <map name="bangladesh-map">
+        <!--<area> tag defines an area in the map image-->
+        <area shape="circle" coords="150, 200, 45" href="./images/rajshahi-division-ruralbd.jpg" 
+        alt="Rajshahi Map" title="rajshahi map" target="_blank" name = "rajshahi map">
+        <area shape="circle" coords="280, 300, 45" href="./images/dhaka-division-map.jpg" 
+        alt="Dhaka Map" title="dhaka map" target="_blank" name = "dhaka map">
+        <area shape="circle" coords="360, 200, 45" href="./images/mymensingh-map.jpg" 
+        alt="Mymensingh Map" title="mymensingh map" target="_blank" name = "mymensingh map">
+        <area shape="circle" coords="520, 190, 45" href ="./images/sylhet-map.jpg" 
+        alt="Sylhet Map" title="sylhet map" target="_blank" name = "sylhet map">
+        <area shape="circle" coords="620, 260, 35" href="./images/indialarge.gif" 
+        alt="India Map" title="inida map" target="_blank" name = "india map">
+    </map>
+</body>
+</html>

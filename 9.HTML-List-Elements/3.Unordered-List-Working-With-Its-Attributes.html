@@ -1,0 +1,102 @@
+<!--Unorderd List Working With Its Attributes
+    =========================================
+    Generally, Unordered List are those kind of list which group 
+    elements in the format of 'disc', 'square' and circle. Basically 
+    those kinda list which are not in the format of number or alphabetical
+    order.
+
+    So, Unordered List have single type of attributes to control the types of
+    its format look which are the following:
+        1) type = 'format_name'
+            where, the  'format_name' can be 3 types,
+                a) disc (by default)
+                b) circle
+                c) square
+            
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Electronics and Gadgets Companies Online Survey Note</h2> 
+    
+    <h3><u>List Of Mostly Used Branded Mobile Companies</u></h3>
+    <!--Making An Unordered List With Attribute Type='disc'-->
+    <ul type="disc">
+        <li>Apple i-Phone</li>
+        <li>Android</li>
+        <li>
+            Blackberry
+            <!--By Default This Child Unordered List Type would be 'Circle'-->
+            <ul>
+                <li>Blackberry10-P9982</li>
+                <li>
+                    Blackberry10-ZEN
+                    <!--By Default This Child Of Child Unordered List Type would be 'Square'-->
+                    <ul>
+                        <li>Price:22000</li>
+                        <li>Blackberry Mobile Shop</li>
+                    </ul>
+                </li>
+                <li>Blackberry10-Classic</li>
+            </ul>
+        </li>
+        <li>Windows</li>
+    </ul>
+
+    <h3><u>List of Mostly Used Branded Computer Companies</u></h3>
+    <!--Making An Unordered List With Attribute Type='circle'-->
+    <ul type="circle">
+        <li>Asus</li>
+        <li>
+            Dell
+            <!--By Default This Child Unordered List Type would be 'Circle'-->
+            <ul>
+                <li>
+                    Dell Vostro 3500
+        
+                <!--By Default This Child Unordered List Type would be 'Square'-->
+                <ul>
+                    <li>Price-45000</li>
+                    <li>Primer Tech</li>
+                </ul>
+                </li>
+                <li>Dell Alienware x17</li>
+            </ul>    
+        </li>
+
+        <li>Lenevo</li>
+        <li>HP</li>
+    </ul>
+
+    <h3><u>List of Mostly Used Branded Speaker Companies</u></h3>
+    <!--Making An Unordered List With Attribute Type='square'-->
+    <ul type="square">
+        <li>
+            Microlab
+            <!--By Default This Child Unordered List Type would be 'Circle'-->
+            <ul>
+                <li>
+                    M-223(2:1)
+                    <!--By Default This Child Of Child Unordered List Type would be 'Square'-->
+                    <ul>
+                        <li>Price:3300</li>
+                        <li>Rayans Ltd.</li>
+                    </ul>
+                </li>
+                <li>TMN-3(3:1)</li>
+            </ul>
+        </li>
+        <li>Samsung</li>
+        <li>Sony</li>
+        <li>Bose</li>
+    </ul>
+    
+</body>
+</html>

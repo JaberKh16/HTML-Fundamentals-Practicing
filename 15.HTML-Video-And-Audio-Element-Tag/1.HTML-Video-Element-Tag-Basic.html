@@ -1,0 +1,39 @@
+<!--
+    HTML Video Tag: <video> .... </video>
+    =====================================
+    HTML <video> ... </video> is used to include video in a HTML
+    Page. Just need to include a <source> .... </source> tag where the 
+    video file - src="path" to define which file to look for when 
+    playing the video. Now, The source file(src) can be either internal
+    saved on local machine or maybe a file url from web page.
+
+    HTML <video> ... </video> tag has some attributes to work with
+    the video controlling which are the following:
+        a) width    = "numeric_value"   ; used to set the width of the video player.
+        b) height   = "numeric_value"   ; used to set the height of the video player.
+        c) control                      ; to control the video options visible(such as play, pause, zoom etc).
+        d) muted                        ; to set the video volume set to Zero.
+        e) loop                         ; to set loop on the video.
+        f) autoplay                     ; to set a autoplay on the video so when video played finised it gets autoplay.
+        g) poster                       ; to set a poster on the video. Take an image path to set.
+
+    Note:   Not all browser support previously setted video format(.ogg) on all browser. Later all browser setted a
+            universal video format(.mp4) which support in all browser.     
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title> HTML Video Element </title>
+</head>
+<body>
+    <!-- Including The Video With Control Over The Video Player -->
+    <video width="320" height="240" controls>
+        <source src="./video/Make $12 Per Hour Searching Google - For Beginners - YouTube.MP4" type="video/mp4">
+    </video>
+
+    <video width="320" height="240" controls>
+        <source src="./video/Make $12 Per Hour Searching Google - For Beginners - YouTube.ogg" type="video/ogg">
+    </video>
+
+</body>
+</html>

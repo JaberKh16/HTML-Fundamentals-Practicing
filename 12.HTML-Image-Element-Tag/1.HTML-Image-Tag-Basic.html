@@ -1,0 +1,80 @@
+<!--
+    HTML Image Adding Tag: <img> .... </img>
+    =========================================
+    Images are basically the binary files which can be come in many formats
+    such as: .jpg, .jpeg, .png, .gifs etc
+
+    To add a image using <img> ... </img> source of the needs to be provided.
+    Now, though the image is a file so the source can be following type:
+        1) File on the device
+        2) File on the USB
+        3) URL Of the File
+    
+    To locate that file two concepts has been used which are the following:
+        a) Absoulte Path:   Actual Path/address of the file which can be accesible 
+                            anywhere located on local machine or url.
+        b) Relative Path:   Usually the path which can be access from parent directory 
+                            path located on local machine.
+    
+    Depending on the OS type these path is varried like following:
+    
+    a) On Absolute Path:
+        1) If Windows OS then use-  file:///driver_name\Folder_name\file_name.ext
+        2) If Linux/Mac OS then use- /folder_name/file_name.ext
+    
+    b) On Relative Path:
+    
+        1) If Windows/Linux/Mac OS then use- Use relative path with forward slash(/).To differentiate
+                                            between parent path(../) or current_path(./)
+
+    Image Tag has some Attributes along with it to manipulate the image
+    which are the following:
+    1) src = "path_value"       ; to include file absolute/relative path.
+    2) width = "numeric_value"  ; to control the width of the image.
+    3) height = "numeric_value" ; to control the height of the image.
+    4) title="string_value"     ; title when mouse hover on that image.
+    5) alt= "string_value"      ; displayed alternative content only when image isn't available/found.
+    6) border ="numeric_value"  ; to include border on top of the image.
+    7) hspace = "numeric_value" ; to include a horizontal distance between images.
+    8) vspace = "numeric_value" ; to include a vertical distance between images.
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+    
+        <title> Image Holder </title>
+    
+    </head>
+    
+    <body>
+    
+        <header>
+            <div style="color: blue"><h1> This is image section </h1> </div>
+        
+        <section>
+        
+            <h2 style="color: darkslategrey"> Assasins Creed Images </h2> 
+            <nav> 
+                <a href="https://www.google.com/search?rlz=1C1CHBF_enBD822BD822&q=assassin+creed+game+images&tbm=isch&source=univ&sa=X&ved=2ahUKEwiD9_i6upviAhXFheYKHWqMAksQ7Al6BAgHEB0&biw=1366&bih=667#imgrc=AvNqPBD3ldfs7M:" 
+                target="_blank"> Assasins Creed Game Images <br> </a>
+                
+                <!--Adding Images Using Relative Path-->        
+                <img src = "./images/assasine-creed-images/Assasin-Creed-Pic-1.jpg" width="350px" height="350px"> <br>
+                <img src="./images/assasine-creed-images/Assasin-Creed-Pic-2.jpg" width="350px", height="350px"> <br><br> <br>
+                
+            </nav>
+            
+        </section>
+            
+            <footer> (c) The Assasins Creed Image Copyrig </footer>
+            
+        </header>
+        
+    </body>
+    
+    
+</html>

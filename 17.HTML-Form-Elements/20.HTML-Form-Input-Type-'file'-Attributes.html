@@ -1,0 +1,32 @@
+<!-- 
+    HTML Form Input Type- 'file' 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title> HTML Form File Picker Input Field </title>
+</head>
+<body>
+    <div style="color: aquamarine"> <h2> Different File Picker Input Field </h2> </div>
+    <!-- Single File Picker Input Field-->
+    <section>
+        <form>
+            <div style="color: brown"> <h3> Single file picker </h3> </div>
+            <label for="file"> Chose a file </label>
+            <!-- defining the input type='file'-->
+            <input type="file" name="file" id="file" accept="image/jpeg">
+        </form>
+    </section>
+    <!-- Multiple File Picker Input Field-->
+    <section>    
+        <form>
+            <div style="color: brown"> <h3> Multiple file picker </h3> </div>
+            <label for="file"> Chose files </label>
+            <!-- To make a input type- 'file' to accept multiple files need
+                to define the attribute 'multiple' with the attribute 'accept'
+            -->
+            <input type="file" name="file" id="file" multiple accept="image/jpeg">
+        </form>
+    </section>
+</body>
+</html>

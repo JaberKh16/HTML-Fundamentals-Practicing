@@ -1,0 +1,49 @@
+<!--
+    HTML Form Element Tag: <form> .... </form>
+    ==========================================
+    HTML Form Element Tag <form> ... </form> is used to create form element
+    which is a container for input element tags <input> to get user's information.
+    Now, form can take some more element tags such as:
+    1) <input>      ; tag that defines an input element field.
+    2) <button>     ; tag that defines a button element.
+    3) <label>      ; tag that used to label any input field such as input, textarea etc.
+    4) <textarea>   ; tag that used to create a textare box.
+    5) <fieldset>   ; tag that used to create a border type container for input field data.
+    6) <legend>     ; tag that used to put a caption/label for the fieldset container.
+    7) <select>     ; tag that used to create a dropdown based contents <option> tags value.
+    8) <option>     ; tag that used to create option value for the <select> element.
+    
+    Form Attributes:
+    ----------------
+    Form Element Tag has some attributes to control the form element behaviour of working
+    which are the following:
+        1) action="sender_addr/page/database-page" ; allows to send form data to any specified redirected link.
+        2) method="GET/POST"    ;   used to define whether this form data is used to get from client-side to server side
+                                    or being read from server by the client respectively using 'GET' and 'POST'. By default,
+                                    form data get travels through 'GET' and to secure data pass through 'POST'.
+        
+        3) enctype="multipart/form-data"    ;   allows user's to work with the multimedia type data such as any files which is
+                                                needed to be upload through using the form.
+        
+        4) target="_self/_blank"        ;   allows to define the state of the redirecting links whether to open the links
+                                            on same page('_self') or new tab ('_blank').
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML Form </title>
+    </head>
+    <body>
+        <form>
+            First name :
+            <input type="text" name="first-name">
+            <br>Last name :
+            <input type="text" name="last-name">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

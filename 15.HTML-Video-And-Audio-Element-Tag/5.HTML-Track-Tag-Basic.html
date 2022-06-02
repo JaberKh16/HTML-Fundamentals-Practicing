@@ -1,0 +1,27 @@
+<!--
+    HTML Track Tag Basic:<track>....</track>
+    ========================================
+    <track>...</track> tag is used define a text track for 
+    media element like- audio or video tags. This element is
+    used to define a subtitles, caption files or other type of
+    files containing text that should be visible when the media
+    content is playing. Tracks are formatted in two formats such
+    as - (.webvtt or .vtt). 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working With HTML Track Tag</title>
+</head>
+<body>
+    <!--Defining The Text Track On The Video Tag-->
+    <track kind="subtitles" src="./video/Module Introduction.srt" srclang="en"> </track>
+    <!-- Adding Poster On The Video With Autoplay Muted Attribute -->
+    <video width="520" height="300" controls  muted poster="./images/CSS-Modules-Image.jpeg">
+        <source src="./video/Module Introduction.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

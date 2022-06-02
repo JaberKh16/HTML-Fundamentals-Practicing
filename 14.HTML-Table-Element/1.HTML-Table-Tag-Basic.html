@@ -1,0 +1,87 @@
+<!--
+    HTML Table Element Tag: <table> .... </table>
+    ==============================================
+    Definition:
+    -----------
+    HTML Table is the matrix type data where to organize the much more
+    data as 2D view can be possible. It allows to orange the data in 
+    rows and columns format. Basically used to show the data in the
+    tabular format.
+
+    HTML Table Related Tags:
+    ------------------------
+    <table> ... </table> used some more related to create tables in HTML 
+    File Format where following tags are being used:
+
+    a) <tr>        ;    used to create table rows.
+    b) <td>        ;    used to create table cells.
+    c) <th>        ;    used to create table header(by default bolded).
+    d) <caption>   ;    used to create caption for the table.
+    e) <colgroup>  ;    used to group columns as a single entity to provides 
+                        some working depending on need.
+    f) <col>       ;    used with <colgroup> to specify each column.
+    g) <tbody>     ;    used to hold body section of table.
+    h) <thead>     ;    used to hold head section of table.
+    i) <tfoot>     ;    used to hold foot section of table.
+    
+    HTML Table Attributes:
+    ----------------------
+    Tables has some attributes to manupulate table operation which 
+    are the following:
+        a) align = "text_value"         ; to perform the table alignment, now 
+                                        'text_value' can be [left(by default)/right/center]
+        b) valigh = "text_value"        ; to perform the table vertical alignment, now
+                                        'text_value' can be [top/middle/bottom]
+        c) border = "numeric_value"     ; to include border on top of the table.
+        d) width = "numeric_value"      ; to control the width of the table.
+        e) bgcolor                      ; to add background color of the table.
+        f) background                   ; to include image on the top of the table, just 
+                                        provide the path of the image.
+        g) cellspadding="numeric_value" ; to include distance between center and inner wall of the cells content.
+        h) cellspacing="numeric_value"  ; to include distance between inner thickness of wall and border.
+        i) colspan = "numeric_value"    ; to convert or merged no. of columns as a single column.
+        j) rowspan = "numeric_value"    ; to convert or merged no. of rows as a single row.
+        k) frame = "text_value"         ; to provied some layout/frame on the table, where those
+                                        'text_value' can be [none/lhs/rhs/above/below/vsides/hsides]
+        l) rules = "text_value"         ; to provide rules on the frame controlling, where those 
+                                        'text_value' can be [none/cols/rows].
+-->
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title> HTML Tables </title>
+</head>
+
+<body>
+    
+    <!-- Creating Table With <table> .... </table> tag -->
+    <table>
+    
+        <!--Creating Table Rows With <tr> .... </tr> -->
+        <tr>
+            <!-- Creating Table Cells With <td> .... </td> -->
+            <td> Row-1 Cell-1</td>
+            <td> Row-1 Cell-2 </td>
+            <td> Row-1 Cell-3</td>
+            <td> Row-1 Cell-4</td>
+        </tr>
+        
+        <tr> 
+            <td> Row-2 Cell-1</td>
+            <td> Row-2 Cell-2</td>
+            <td> Row-2 Cell-3</td>
+            <td> Row-2 Cell-4</td>  
+        </tr>
+
+        <tr>
+            <td>Row-3 Cell-1</td>
+            <td>Row-3 Cell-2</td>
+            <td>Row-3 Cell-3</td>
+            <td>Row-3 Cell-4</td>
+        </tr>
+    
+    </table>
+
+</body>
+</html>

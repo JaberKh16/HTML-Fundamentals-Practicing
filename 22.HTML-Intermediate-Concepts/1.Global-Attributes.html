@@ -1,0 +1,179 @@
+<!--
+    HTML Global Attributes Basic Concepts
+    =====================================
+    In the presentations of the HTML tags above, the attributes specific to each tag have been presented 
+    and described. There is also a set of attributes called Global Attributes which apply to all HTML tags. 
+    Feel free to use them with any HTML tag, because they are globally available to all of them!
+    
+    Those attributes are the following-
+
+    ● "accesskey" ==>   this provides shortcuts for activating elements or bringing them into focus. 
+                        One activates the shortcut key differently depending on the browser. 
+                        In Chrome, it is alt + the accesskey which brings the element into focus, 
+                        but in Firefox, it is shift + alt + the accesskey.
+
+   
+    For Example-
+        <a href="https://someURLlink..." accesskey="z">In Chrome, focus the element w/ alt+z</a><br>
+       
+   
+
+    Setting up keyboard shortcuts to HTML elements to focus them
+
+    ● "autocapitalize" ==>  gives control capitalization over text input that is received from devices other 
+                            than physical keyboards, e.g. voice or mobile based text inputs. 
+                            Its values are:
+
+                                - off or none no capitalization is applied.
+
+                                - on or sentences will capitalize the first letter of a sentence.
+
+                                - words the first letter of every word will be capitalized.
+
+                                - characters all letters will be in uppercase.
+
+    ● "class" ==>   class names can be assigned to any elements to show that they have a special function that applies 
+                    to more than one of them. The main uses of the class attribute are to reference a group HTML 
+                    elements in a stylesheet, or to manipulate them with JavaScript.
+
+    ● "contenteditable" ==> clarifies whether an element can be edited or not. It takes the values true or false.
+                            Content that is editable can be changed in the webpage.
+
+    ● data-* ==>    stores customized data that is private to the web page or an application. In the course 
+                    of our website project, we may wish to create our own custom data labels, hierarchies 
+                    or classification schemes, to be used by Js or CSS scripts, 
+                    For example-
+
+                        <h1 data-song-genre="hiphop">Dear Mama</h1>
+                        <h1 data-song-genre="edm">Levels</h1>
+                        <h1 data-song-genre="folkrock">Like a Rolling Stone</h1>
+
+
+                    An example of giving customized data to HTML elements, which can be used by JavaScript or CSS.
+
+    ● "dir" ==>     gives the direction of text progression for an element with textual content. The three values dir t
+                    akes are ltr (left-to-right), rtl (right-to-left) and auto (let the browser decide). 
+                    This is illustrated above in the section on the <bdo> tag.
+
+    ● "draggable" ==>   Have you ever tried to drag a photo from a website onto your desktop and found out that 
+                        you couldn’t? This attribute controls whether or not an element is draggable and takes 
+                        as its values true or false. In the example below, you will not be able to drag the 
+                        image from a web page onto your computer’s desktop.
+                        For Example-
+
+                            <img src="http://bit.ly/33y4EuS" width="300" height="300" alt="city" draggable="false">
+
+
+    ● "dropzone" ==>    a new global attribute and is not currently supported by most browsers. It indicates 
+                        the kinds of content that can be dropped onto an element and uses the HTML Drag 
+                        and Drop API. It takes the values move, copy or link.
+
+    ● "hidden" ==>  controls the visibility and relevance of an element. It can keep content from being 
+                    displayed until some condition is met in Js which can then remove this attribute and 
+                    make the element visible. It takes no value other than itself.
+
+    ● "id" ==>  this provides unique identifiers to elements that are a special case of some kind. These 
+                identifiers can be utilized by Js or CSS for interaction or stylization purposes or 
+                used by in-page anchors for internal navigation on the same page. The value is a unique name.
+
+    ● "inputmode" ==>   Allows for inputs to be designed that are optimized for certain kinds of data entry. 
+                        Its possible values are:
+
+                        - none used when the page has its own keyboard feature.
+                        - text is the default for receiving keyboard-based data.
+                        - decimal includes number formatting for decimals and large numbers by providing 
+                          periods and commas.
+                        - numeric expects data from a numerical entry keypad, with numbers ranging 0-9.
+                        - tel optimizes data entry for phone numbers, including characters for * , # and -
+                        - search optimizes data for performing a search function.
+                        - email formatting includes the character @ to helps with entering emails.
+                        - url is optimized for web addresses and includes http and domain elements built in.
+
+    ● "itemprop"  ==>   Allows you to add unique item properties to an element of your own devising, 
+                        similar to id and class.
+                        For Example-
+
+                            <h1 itemprop="Vietnamese">Pho</h1>
+
+                        There isn’t any visual change with using itemprop, but this attribute allows code to 
+                        search out custom properties given to HTML elements.
+
+    ● "lang" ==> indicates an element’s language the two-letter language codes.
+
+    ● "spellcheck" ==> specifies whether or not an element’s spelling and grammar should be checked
+
+
+
+
+    ● "style" ==>   provides a place for inline CSS styling within the tag. 
+                    For Example-
+
+                        <tag style=“property:value; property:value; property:value”>
+
+    ● "tabindex" ==>    gives an element’s tabbing order. This allows users to tab quickly through a site's tabbale
+                        content, using the keyboard’s tab key. For example, you might want a user to tab through
+                        items on a form, or across images to select them. It takes the value of 
+                        the tabbing order, e.g. 1, 2, 3, 4 etc.
+
+    ● "title" ==>   provides additional information about an element that may be relevant and will display a popup 
+                    box when the cursor moves over it. One of its most common uses is to provide tips or help 
+                    comments over items as the user expresses interest in them by placing the cursor over it.
+
+    ● "translate" ==>   indicates whether an element should be subject to translation or not, and delivers 
+                        this information to the browser by taking values of yes or no.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Attributes In HTML</title>
+</head>
+<body>
+    <!-- Use Of "accesskey" attribute -->
+    <section class="accesskey">
+        <h1 style="color:blue; text-decoration:underline;">Use Of "accesskey" attribute</h1>
+        <a href="https://someURLlink..." accesskey="z">In Chrome, focus the element w/ alt+z</a><br>
+        <a href="https://someURLlink..." accesskey="x">In Firefox, focus the element w/ shift+alt+z</a>
+    </section>
+
+    <!-- Use Of "data-*" attribute -->
+    <section class="data-*">
+        <h1 style="color:blue; text-decoration:underline;">Use Of "data-*" attribute</h1>
+        <h3 data-song-genre="hiphop">Numb</h3>
+        <h3 data-song-genre="edm">I Stand Alone</h3>
+        <h3 data-song-genre="folkrock">Like a Rolling Stone</h3>
+    </section>
+
+    <!-- Use Of "dragable" attribute -->
+    <section class="dragable">
+        <h1 style="color:blue; text-decoration:underline;">Use Of "dragable" attribute</h1>
+        <img src="http://bit.ly/33y4EuS" width="300" height="300" alt="city" draggable="false">
+    </section>
+
+    <!-- Use Of "itemprop" attribute -->
+    <section class="itemprop">
+        <h1 style="color:blue; text-decoration:underline;">Use Of "itemprop" attribute</h1>
+        <h3 itemprop="Vietnamese">Pho</h3>
+        <h3 itemprop="Mexican">Enchilada</h3>
+        <h3 itemprop="Greek">Moussaka</h3>
+        <h3 itemprop="Polish">Pierogi</h3>
+    </section>
+
+    <!-- Use of "spellcheck" attribute -->
+    <section class="spellcheck">
+        <h1 style="color:blue; text-decoration:underline;">Use of "spellcheck" attribute</h1>
+        <h3>Red Dots Under Misspelled Words</h3>
+        <form>
+            <p>
+                <input type="text" spellcheck="true">
+            </p>
+            <button type="submit">Send Our Way!</button>
+        </form>
+    </section>
+
+</body>
+</html>

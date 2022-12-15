@@ -1,12 +1,35 @@
 <!--
     HTML Track Tag Basic:<track>....</track>
     ========================================
-    <track>...</track> tag is used define a text track for 
-    media element like- audio or video tags. This element is
-    used to define a subtitles, caption files or other type of
-    files containing text that should be visible when the media
-    content is playing. Tracks are formatted in two formats such
-    as - (.webvtt or .vtt). 
+    <track>...</track> tag is used define a text track for  media element like- audio or video tags. 
+    This element is used to define a subtitles, caption files or other type of files containing text 
+    that should be visible when the media content is playing. Tracks are formatted in two formats such
+    as - (.webvtt or .vtt) usually.
+
+    <audio> and <video> might make use of <track> since each media format sometimes has need of other 
+    supporting files, such as subtitles or multiple channels of information.
+
+    As such, <audio> or <video> will always be parents of a <track> element. Now the <track> tag takes 
+    the following attributes.
+
+        ● 'default' defines a default track unless overridden by user settings. It takes no additional value.
+
+        ● 'kind' defines text tracks, and has the values of captions, chapters, descriptions, metadata and subtitles.
+
+        ● 'label' takes text as its attribute and defines a name for a text track.
+
+        ● 'src' is required, since <track> has to refer to some other media file. Its value is the URL of the 
+          resource to be accessed.
+
+        ● 'srclang' defines that language of any text tracks and is also required for kind=“subtitle”.
+    
+    For Example-
+
+        <video width="512" height="288" controls>
+            <source src="watchVideo.mp4" type="video/mp4">
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="bg" label="Bulgarian">
+        </video>
+
 -->
 <!DOCTYPE html>
 <html lang="en">
